@@ -283,7 +283,7 @@ main {
 
 .tabs__btn {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   gap: 70px;
   padding: 0 85px; 
@@ -293,6 +293,7 @@ main {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 500;
+  color: #000;
   cursor: pointer;
 }
 
@@ -308,7 +309,8 @@ main {
 .tabs__content-item {
   display: none;
   grid-template-columns: repeat(2, 1fr);
-  gap: 35px; 
+  gap: 35px;
+  padding-bottom: 75px; 
 }
 
 .tabs__content-item.tabs__content-item--active {
@@ -333,40 +335,8 @@ main {
 
 .services__price {
   margin-left: auto;
+  color: #00b7ac;
   font-size: 18px;
-}
-
-.services__book-an-appointment-link {
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 18px;
-  color: #FFFFFF;
-  background: linear-gradient(45deg, #008191, #0094a3, #00b7ac, #00c2ac, #00d8d1);
-  border: none;
-  border-radius: 8px;
-  width: 225px;
-  margin: 0 auto;
-  padding: 13px;
-}
-
-.services__book-an-appointment-link:hover {
-  background: linear-gradient(45deg, #008191, #0094a3, #00b7ac, #00c2ac, #00d8d1);
-  background-size: 400% 400%;
-	animation: gradient 5s ease-in-out infinite;
-} 
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }
 
 .barbers__list {
@@ -517,8 +487,7 @@ main {
 }
 
 .phone,
-.whatsapp-link,
-.email {
+.whatsapp-link {
   font-size: 18px;
   font-weight: 400;
 }
@@ -559,11 +528,6 @@ main {
 }
 
 .footer__phone {
-  font-size: 10px;
-}
-
-.footer__email {
-  margin: 17px 0;
   font-size: 10px;
 }
 
@@ -680,8 +644,7 @@ main {
   }
   .contacts__item-text,
   .phone,
-  .whatsapp-link,
-  .email {
+  .whatsapp-link {
     font-size: 14px;
   }
 }
@@ -730,8 +693,7 @@ main {
   }
   .contacts__item-text,
   .phone,
-  .whatsapp-link,
-  .email {
+  .whatsapp-link {
     font-size: 12px;
   }
 }
