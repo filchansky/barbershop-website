@@ -283,7 +283,7 @@ main {
 
 .tabs__btn {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   gap: 70px;
   padding: 0 85px; 
@@ -331,6 +331,13 @@ main {
   font-weight: 400;
   margin-bottom: 2px;
   padding-top: 10px;
+}
+
+/* TEMPORARY TAG */
+
+.services__name-promo {
+  color: #fc0303;
+  text-transform: uppercase;
 }
 
 .services__price {
