@@ -88,6 +88,7 @@ body {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -174,9 +175,11 @@ body {
 .menu__btn.active .menu__btn-item:nth-child(1) {
   transform: translateY(9px) rotate(45deg);
 }
+
 .menu__btn.active .menu__btn-item:nth-child(2) {
   opacity: 0;
 }
+
 .menu__btn.active .menu__btn-item:nth-child(3) {
   transform: translateY(-9px) rotate(-45deg);
 }
@@ -242,7 +245,7 @@ main {
 .top__links-item-1:hover {
   background: linear-gradient(45deg, #008191, #0094a3, #00b7ac, #00c2ac, #00d8d1);
   background-size: 400% 400%;
-	animation: gradient 5s ease-in-out infinite;
+  animation: gradient 5s ease-in-out infinite;
 }
 
 .top__links-item-2 {
@@ -399,20 +402,22 @@ main {
 
 .barbers__book-an-appointment-link:hover {
   background: linear-gradient(45deg, #008191, #0094a3, #00b7ac, #00c2ac, #00d8d1);
-	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
+  0% {
+	  background-position: 0% 50%;
 	}
-	50% {
-		background-position: 100% 50%;
+
+  50% {
+    background-position: 100% 50%;
 	}
-	100% {
-		background-position: 0% 50%;
-	}
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* GALLERY */
@@ -659,13 +664,16 @@ main {
     padding-left: 10px;
     padding-right: 10px;
   }
+
   .top__title {
     font-size: 35px;
     line-height: normal;
   }
+
   .top__text {
     font-size: 22px;
   }
+
   .services__title,
   .barbers__title,
   .gallery__title,
