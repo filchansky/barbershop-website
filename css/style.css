@@ -29,7 +29,7 @@ body {
   background-color: #f4f4f4;
   color: #151618;
   font-family: "Roboto", sans-serif;
-  font-weight: 400; 
+  font-weight: 400;
   font-style: normal;
   font-size: 20px;
   line-height: 1.2;
@@ -38,7 +38,7 @@ body {
 .container {
   max-width: 1240px;
   padding-left: 20px;
-  padding-right: 20px;  
+  padding-right: 20px;
   margin: 0 auto;
 }
 
@@ -50,8 +50,53 @@ body {
   height: 55px;
 }
 
+/* GENERAL STYLES */
+
+.services,
+.barbers,
+.gallery,
+.vacancies,
+.contacts {
+  margin-bottom: 150px;
+}
+
+.barbers__title,
+.gallery__title,
+.contacts__title {
+  margin: 155px 0 60px;
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.scroller {
+  display: flex;
+  overflow: hidden;
+}
+
+.scroller__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  min-width: 100%;
+  animation: scroll 55s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* HEADER */
+
 .header__inner {
-  display: flex;  
+  display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 10px;
@@ -71,7 +116,27 @@ body {
 
 .menu__link {
   text-transform: uppercase;
-  cursor: pointer;   
+  cursor: pointer;
+}
+
+.change-lang {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  gap: 2px;
+  text-align: center;
+}
+
+.change-lang__item-1,
+.change-lang__item-2 {
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 16px;
+  color: #151618;
+}
+
+.change-lang__item-2 {
+  border-top: 1px solid black;
 }
 
 .change-lang__item-1:hover,
@@ -110,7 +175,7 @@ body {
   transform: translateY(9px) rotate(45deg);
 }
 .menu__btn.active .menu__btn-item:nth-child(2) {
-  opacity: 0;  
+  opacity: 0;
 }
 .menu__btn.active .menu__btn-item:nth-child(3) {
   transform: translateY(-9px) rotate(-45deg);
@@ -124,9 +189,13 @@ body {
   font-weight: 500;
 }
 
+/* MAIN */
+
 main {
-  margin-top: 75px; 
+  margin-top: 75px;
 }
+
+/* HOME PAGE */
 
 .top__inner {
   display: flex;
@@ -173,7 +242,7 @@ main {
 .top__links-item-1:hover {
   background: linear-gradient(45deg, #008191, #0094a3, #00b7ac, #00c2ac, #00d8d1);
   background-size: 400% 400%;
-	animation: gradient 5s ease-in-out infinite;  
+	animation: gradient 5s ease-in-out infinite;
 }
 
 .top__links-item-2 {
@@ -183,94 +252,30 @@ main {
   text-decoration: none;
   font-size: 14px;
   width: 140px;
-  margin: 0 auto; 
-  background-color: transparent;  
-  border: 3px solid #00b7ac; 
+  margin: 0 auto;
+  background-color: transparent;
+  border: 3px solid #00b7ac;
   border-radius: 8px;
-  color: #000; 
-  padding: 10px 20px; 
+  color: #000;
+  padding: 10px 20px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .top__links-item-2:hover {
   background-color: #00b7ac;
-  color: #FFFFFF; 
+  color: #FFFFFF;
 }
 
-.change-lang {
-  display: flex;
-  flex-direction: column;
-  width: 30px;
-  gap: 2px;
-  text-align: center;
-}
-
-.change-lang__item-1,
-.change-lang__item-2 {
-  cursor: pointer;
-  background-color: transparent;
-  font-size: 16px;
-  color: #151618;
-}
-
-.change-lang__item-2 {
-  border-top: 1px solid black;
-}
-
-.services,
-.barbers,
-.gallery,
-.vacancies,
-.contacts {
-  margin-bottom: 150px; 
-} 
+/* SERVICES */
 
 .services {
   background-color: #eeeeee;
-  box-shadow: 10px 0 0px 5px rgb(238, 238, 238), -10px 0 0px 5px rgb(238, 238, 238); 
+  box-shadow: 10px 0 0 5px rgb(238, 238, 238), -10px 0 0 5px rgb(238, 238, 238);
   margin-top: 390px;
-}
-
-.vacancies {
-  background-color: #eeeeee;
-  box-shadow: 10px 0 0px 5px rgb(238, 238, 238), -10px 0 0px 5px rgb(238, 238, 238);   
-}
-
-.scroller {
-  display: flex;
-  overflow: hidden;
-}
-
-.scroller__inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  min-width: 100%;
-  animation: scroll 55s linear infinite;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
 }
 
 .services__title {
   margin: 75px 0 60px;
-  font-size: 60px;
-  font-weight: 500;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.barbers__title,
-.gallery__title, 
-.contacts__title {
-  margin: 155px 0 60px;
   font-size: 60px;
   font-weight: 500;
   text-align: center;
@@ -286,7 +291,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   gap: 70px;
-  padding: 0 85px; 
+  padding: 0 85px;
 }
 
 .tabs__btn-item {
@@ -298,8 +303,8 @@ main {
 }
 
 .tabs__btn-item:hover {
-  color: #00b7ac; 
-  transition: all .3s ease;  
+  color: #00b7ac;
+  transition: all .3s ease;
 }
 
 .tabs__btn-item--active {
@@ -310,7 +315,7 @@ main {
   display: none;
   grid-template-columns: repeat(2, 1fr);
   gap: 35px;
-  padding-bottom: 75px; 
+  padding-bottom: 75px;
 }
 
 .tabs__content-item.tabs__content-item--active {
@@ -333,6 +338,12 @@ main {
   padding-top: 10px;
 }
 
+.services__price {
+  margin-left: auto;
+  color: #00b7ac;
+  font-size: 18px;
+}
+
 /* TEMPORARY TAG */
 
 .services__name-promo {
@@ -340,11 +351,7 @@ main {
   text-transform: uppercase;
 }
 
-.services__price {
-  margin-left: auto;
-  color: #00b7ac;
-  font-size: 18px;
-}
+/* BARBERS */
 
 .barbers__list {
   display: flex;
@@ -394,7 +401,7 @@ main {
   background: linear-gradient(45deg, #008191, #0094a3, #00b7ac, #00c2ac, #00d8d1);
 	background-size: 400% 400%;
 	animation: gradient 5s ease infinite;
-} 
+}
 
 @keyframes gradient {
 	0% {
@@ -408,6 +415,8 @@ main {
 	}
 }
 
+/* GALLERY */
+
 .gallery__list {
   display: flex;
   justify-content: space-between;
@@ -419,6 +428,13 @@ main {
   width: 288px;
   height: 288px;
   border-radius: 10px;
+}
+
+/* VACANCIES */
+
+.vacancies {
+  background-color: #eeeeee;
+  box-shadow: 10px 0 0 5px rgb(238, 238, 238), -10px 0 0 5px rgb(238, 238, 238);
 }
 
 .vacancies__title {
@@ -448,19 +464,21 @@ main {
   text-decoration: none;
   font-size: 14px;
   width: 173px;
-  margin: 0 auto; 
-  background-color: transparent;  
-  border: 3px solid #00b7ac; 
+  margin: 0 auto;
+  background-color: transparent;
+  border: 3px solid #00b7ac;
   border-radius: 8px;
-  color: #000; 
-  padding: 10px 20px; 
-  transition: background-color 0.3s, color 0.3s; 
+  color: #000;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .vacancies__link:hover {
   background-color: #00b7ac;
-  color: #FFFFFF; 
+  color: #FFFFFF;
 }
+
+/* CONTACTS */
 
 .contacts__list {
   display: flex;
@@ -485,12 +503,12 @@ main {
 .contacts__item-title {
   margin-top: 20px;
   margin-bottom: 15px;
-  font-size: 20px;  
+  font-size: 20px;
   font-weight: 500;
 }
 
 .whatsapp-link {
-  color: #25d365	
+  color: #25d365
 }
 
 .phone,
@@ -499,14 +517,16 @@ main {
   font-weight: 400;
 }
 
+/* FOOTER */
+
 .footer {
   padding-top: 18px;
   padding-bottom: 10px;
   background-color: #c8c8c8;
-  box-shadow: 
-  204px 0px 0 5px #c8c8c8, 
-  -17px 0px 0 5px #c8c8c8, 
-  0px 10px 0 9px #c8c8c8; 
+  box-shadow:
+  204px 0 0 5px #c8c8c8,
+  -17px 0 0 5px #c8c8c8,
+  0 10px 0 9px #c8c8c8;
   color: #151618;
 }
 
@@ -538,10 +558,13 @@ main {
   font-size: 10px;
 }
 
+/* MEDIA QUERIES */
+
 @media (max-width: 1120px) {
   .menu__list {
     font-size: 15px;
   }
+
   .header__inner {
     min-height: 10px;
   }
@@ -570,28 +593,36 @@ main {
     transform: translateX(-150%);
     transition: transform .3s ease;
   }
+
   .menu__list.menu__list.active {
     transform: translateX(0%);
   }
+
   .menu__btn {
     display: block;
   }
+
   .menu {
-    order: 1;  
+    order: 1;
   }
+
   .change-lang {
     order: -1;
     z-index: 0;
   }
+
   .menu__item {
-    font-size: 24px;  
+    font-size: 24px;
   }
+
   .tabs__content-item {
     grid-template-columns: 1fr;
   }
+
   .tabs__btn-item {
     font-size: 14px;
   }
+
   .gallery__list {
     justify-content: space-around;
   }
@@ -601,18 +632,23 @@ main {
   .tabs__btn {
     gap: 40px;
   }
+
   .tabs__btn-item {
     font-size: 12px;
   }
+
   .footer__inner {
     flex-direction: column;
   }
+
   .footer__copyright {
     margin: 20px 0;
   }
+
   .footer__contacts {
     text-align: center;
   }
+
   .menu__link.active {
     display: none;
   }
@@ -637,22 +673,27 @@ main {
   .contacts__title {
     font-size: 35px;
   }
-  .barbers__list {
-    justify-content: center;
-  }
-  .vacancies__text {
-    font-size: 18px;
-  }
-  .contacts__item-title {
-    font-size: 18px;
-  }
-  .contacts__item-title-letters {
-    font-size: 18px;
-  }
+
   .contacts__item-text,
   .phone,
   .whatsapp-link {
     font-size: 14px;
+  }
+
+  .barbers__list {
+    justify-content: center;
+  }
+
+  .vacancies__text {
+    font-size: 18px;
+  }
+
+  .contacts__item-title {
+    font-size: 18px;
+  }
+
+  .contacts__item-title-letters {
+    font-size: 18px;
   }
 }
 
@@ -661,13 +702,16 @@ main {
     margin-bottom: 10px;
     font-size: 28px;
   }
+
   .top__text {
     margin-bottom: 30px;
     font-size: 18px;
   }
+
   .top__inner {
     min-height: 367px;
   }
+
   .services__title,
   .barbers__title,
   .gallery__title,
@@ -675,33 +719,40 @@ main {
   .contacts__title {
     font-size: 35px;
   }
-  .services__name {
-    font-size: 16px;
-  }
-  .services__price {
-    font-size: 14px;
-  }
-  .gallery__img {
-    max-width: 100%;
-    height: auto;
-  }
-  .vacancies__text {
-    font-size: 14px;
-  }
-  .contacts__list {
-    gap: 45px;
-    align-items: baseline;
-  }
-  .contacts__item-title {
-    font-size: 14px;
-  }
-  .contacts__item-title-letters {
-    font-size: 14px;
-  }
+
   .contacts__item-text,
   .phone,
   .whatsapp-link {
     font-size: 12px;
   }
-}
 
+  .services__name {
+    font-size: 16px;
+  }
+
+  .services__price {
+    font-size: 14px;
+  }
+
+  .gallery__img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .vacancies__text {
+    font-size: 14px;
+  }
+
+  .contacts__list {
+    gap: 45px;
+    align-items: baseline;
+  }
+
+  .contacts__item-title {
+    font-size: 14px;
+  }
+
+  .contacts__item-title-letters {
+    font-size: 14px;
+  }
+}
