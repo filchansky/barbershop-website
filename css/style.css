@@ -347,13 +347,6 @@ main {
   font-size: 18px;
 }
 
-/* TEMPORARY TAG */
-
-.services__name-promo {
-  color: #fc0303;
-  text-transform: uppercase;
-}
-
 /* BARBERS */
 
 .barbers__list {
